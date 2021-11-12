@@ -25,9 +25,17 @@ ul{
   list-style: none;
 }
 
+li{
+  height: 50px;
+}
+
 li p,
 i{
   cursor: pointer;
+}
+
+p{
+  color: black;
 }
 
 i{
@@ -36,4 +44,9 @@ i{
 
 i:hover{
   color: black;
+}
+
+.todo-done{
+  text-decoration: line-through;
+  color: gray;
 }
