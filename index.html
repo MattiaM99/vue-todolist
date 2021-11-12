@@ -16,16 +16,14 @@
     <div class="main container text-center shadow p-3 mb-5 bg-white rounded">
 
       <h1>Cose da Fare</h1>
-
       <h3 v-if="error">Inserisci almeno 3 caratteri</h3>
-
       <input v-model="stringTodo.todo" @keyup.enter="insertTodo" class="shadow" type="text"
        placeholder="Aggiungi una cosa da fare">
 
       <ul>
         <li class="d-flex justify-content-between" v-for="(item, index) in todoList">
 
-          <p>{{item.todo}}</p>       
+          <p @click="item.done = !item.done" :class="{'todo-done': item.done}">{{item.todo}}</p>       
 
           <i @click="remove(index)" class="fas fa-trash"></i> 
 
