@@ -1,0 +1,39 @@
+body{
+  background-color:#71B6FA
+}
+
+.main{
+  margin-top: 40px;
+  height: 800px;
+  width: 800px;
+}
+
+h1{
+  margin: 50px 0;
+}
+
+input{
+  background-color: rgba(255, 255, 255,.6);
+  line-height: 30px;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border: none;
+}
+
+ul{
+  list-style: none;
+}
+
+li p,
+i{
+  cursor: pointer;
+}
+
+i{
+  color: rgba(0, 0, 0, .5);
+}
+
+i:hover{
+  color: black;
+}
