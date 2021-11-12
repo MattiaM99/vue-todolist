@@ -19,7 +19,7 @@
 
       <h3 v-if="error">Inserisci almeno 3 caratteri</h3>
 
-      <input v-model="stringTodo" @keyup.enter="insertTodo" class="shadow" type="text"
+      <input v-model="stringTodo.todo" @keyup.enter="insertTodo" class="shadow" type="text"
        placeholder="Aggiungi una cosa da fare">
 
       <ul>

@@ -19,12 +19,15 @@ const app = new Vue({
       {
         todo: "spesa",
         done: false
-      }
+      },
     ],
 
-    error: false,
+    stringTodo: {
+      todo: "",
+      done: false
+    },
 
-    stringTodo: "",
+    error: false,
   },
 
   methods: {
@@ -37,7 +40,10 @@ const app = new Vue({
         this.error = true
       }else{
         this.todoList.push(this.stringTodo);
-        this.stringTodo = ''
+        this.stringTodo = {
+          todo: "",
+          done: false
+        }
       }
     }
   }
