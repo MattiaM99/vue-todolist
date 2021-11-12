@@ -39,11 +39,7 @@ const app = new Vue({
       if(this.stringTodo.lenght < 3){
         this.error = true
       }else{
-        this.todoList.push(this.stringTodo);
-        this.stringTodo = {
-          todo: "",
-          done: false
-        }
+        this.todoList.push(this.stringTodo.todo = "");
       }
     }
   }
